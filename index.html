@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>樂學園</title>
+    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script>
+        var controller = new ScrollMagic.Controller();
+        var revealElements = document.getElementsByClassName("digit");
+        for(var i =0 ; i<revealElements.length; i++)
+        {
+            new ScrollMagic.Scene({
+                triggerElement: revealElements[i],
+                offset:50,
+                triggerHook:0.9,
+            })
+            .setClassToggle(revealElements[i] , "visible")
+            .addTo(controller);
+        }
+    </script>
+</head>
+<body>
+    <!--背景音樂-->
+    <audio src="assets/bgmusic.mp3" type="audio/mpeg" autoplay="autoplay"></audio>
+    <!--導覽列-->
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="assets/img/logob.jpg" style="width: 120px;"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">空間介紹</a>
+                        <ul class="drop-menu">
+                            <li><a href="zhi.html">自在行</a></li>
+                            <li><a href="water.html">活水來</a></li>
+                            <li><a href="wind.html">風雅頌</a></li>
+                            <li><a href="spring.html">總是春</a></li>
+                            <li><a href="think.html">有思隨</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="activity.html">活動資訊</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--首圖幻燈片-->
+    <section>
+        <div class="box">
+            <!--背景動態圖-->
+            <div class="b">
+                <video autoplay muted loop>
+                    <source src="assets/bgvid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="img-tran">
+                <div class="w3-content w3-section" style="width:700px;">
+                    <img class="mySlides w3-animate-top" src="assets/img/02.jpg">
+                    <img class="mySlides w3-animate-bottom" src="assets/img/06.jpg">
+                    <img class="mySlides w3-animate-top" src="assets/img/07.jpg">
+                    <img class="mySlides w3-animate-bottom" src="assets/img/08.jpg">
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+                        function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}                            x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2500);    
+                        }
+                    </script>
+                </div>        
+            </div>
+        </div>
+        <div class="text-box">
+            <h1>樂學園</h1>
+            <p>-完美的學習天地-</p>
+        </div>
+        <div class="color-dot1"></div>
+        <div class="color-dot2"></div>
+    </section>
+
+    <!--過場排版-->
+    <section  class="sec">
+        <div class="digit h_scroll">
+            <h1>樂<br>學<br>園</h1>
+        </div>
+        <div class="digit p_scroll">
+            <p>本校為促進學生學習成效追求教學卓越之發展目標，營造幸福有感與樂學的氛圍，特以「樂學園」為名，
+                打造多功能學生學習發展基地。透過自主學習、團體討論、藝文欣賞、學習輔導、以及學用合一的諮詢協助，促使學生勤於樂於學習，引領學生學涯發展與培養潛力，落實培育兼具品格、專業、創意、世界觀的新世代人才。
+            </p>
+        </div>
+        <div class="img_1">
+            <img src="assets/img/08.jpg" style="height: 260px;">
+        </div>
+        <div class="digit colorbox_scroll"></div>
+        <div class="digit h2_scroll">
+            <h2>自在行／自學村</h2>
+            <h2>活水來／討論坊</h2>
+            <h2>風雅頌／藝文廳</h2>
+        </div>
+        <div class="digit p2_scroll">
+            <p>昨夜江邊春水生，艨艟巨艦一毛輕。向來枉費推移力，此日中流自在行。＜朱熹—觀書有感＞ 一</p><br>
+            <p>半畝方塘一鑑開，天光雲影共徘徊。問渠那得清如許，未有源頭活水來。＜朱熹—觀書有感＞ 二</p><br>
+            <p>風雅頌出自中國最古老的詩歌總輯《詩經》，其樂曲已失傳，只留歌詞，分風、雅、頌三類型，而賦、比、興為詩歌的表現手法，與風雅<br>頌合稱詩的六義。</p>
+        </div>
+        <div class="digit h3_scroll">
+            <h3>有思隨／課輔室</h3>
+            <h3>總是春／學用區</h3>
+        </div>
+        <div class="digit p3_scroll">
+            <p>人之進學在於思，思則能知是與非。但得用心才熟後，自然後處有思隨。＜朱熹—九思＞</p><br>
+            <p>勝日尋芳泗水濱，無邊光景一時新。等閒識得東風面，萬紫千紅總是春。＜朱熹—春日＞</p><br>
+        </div>
+        <div class="up">
+            <p>“</p>
+        </div>
+        <div class="down">
+            <p>”</p>
+        </div>
+        <div class="hrline">...
+        </div>
+    </section>
+
+    <!--空間介紹連結區塊-->
+    <section>
+        <div class="box2">
+            <div class="wrap">
+                <div class="item">
+                    <a href="zhi.html"><img src="assets/img/index01.jpg"></a>
+                    <div class="txt">
+                        <h2>自在行</h2>
+                        <p>-SELF-STUDY HUB-</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="water.html"><img src="assets/img/11.jpg"></a>
+                    <div class="txt">
+                        <h2>活水來</h2>
+                        <p>-DISCUSSION CORNER-</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="wind.html"><img src="assets/img/12.jpg"></a>
+                    <div class="txt">
+                        <h2>風雅頌</h2>
+                        <p>-ART SOLON-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--版權列-->
+    <footer>
+        <div class="footer">
+            <h1>Chung Yuan Christian University</h1>
+            <p>Copyright © 2021 CYIM <br>
+                32023 桃園市中壢區中北路200號 <br>
+                Tel：+886-3-265-9999 , +886-3-456-317</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky",window.scrollY > 0);
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
