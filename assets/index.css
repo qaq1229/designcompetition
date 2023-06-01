@@ -24,7 +24,7 @@ width: 700px; height: 385px; margin: 280px 400px;}
 .text-box {
     width: 420px;
     height: 190px;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(234, 234, 234);
     color: #3f3f3f;
     position: absolute;
     left: 985px;
@@ -65,14 +65,17 @@ width: 700px; height: 385px; margin: 280px 400px;}
 }
 
 .b{
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: -1;
     position: absolute;
-    top: 200px;
+    top: 180px;
+    left: 100px;
     height: 550px;
-    left: 50px;
 }
 .b video{
+    width: 100%;
+}
+.bggg{
     width: 100%;
 }
 
