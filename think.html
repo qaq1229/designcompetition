@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有思隨</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/zhi.css">
+   
+</head>
+<body>
+    <!--導覽列-->
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="assets/img/logob.jpg" style="width: 120px;"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">空間介紹</a>
+                        <ul class="drop-menu">
+                            <li><a href="zhi.html">自在行</a></li>
+                            <li><a href="water.html">活水來</a></li>
+                            <li><a href="wind.html">風雅頌</a></li>
+                            <li><a href="spring.html">總是春</a></li>
+                            <li><a href="think.html">有思隨</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="activity.html">活動資訊</a></li>
+                    <li><a href="video.html">宣傳影片</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--內容-->
+    <article>
+    <section class="main">
+        <div class="bg1">
+            <span class="bgimg bg-img1"><img src="assets/img/think1.jpg" class="img1"></span>
+            <span class="bgimg bg-img2"><img src="assets/img/think2.jpg" class="img1"></span>
+        </div>
+        <p class="title">有思隨</p>
+        <div class="words">
+            <p>
+                週一至週四晚間安排共同必修微積分諮詢室，<br>
+                提供課業輔導，並於開放時段提供其他課程之課業守護<br>
+                天使進行教學指導，讓同學於課餘時間加強學科知能。<br>
+                依照課業輔導時間開放。<br><br>
+            </p>
+            <p class="opentime">
+                <span class="open">課業守護時間：</span><br>
+                每日：&nbsp;09：00 ~ 21：00<br>
+            </p>
+        </div>
+    </section>
+    <section class="main1">
+        <div class="mid">
+            <p>有思隨 / 課輔室 - Tutorial Room</p>
+            <p class="sec">聞道有先後，術業有專攻，如是而已。——《師說》</p>
+        </div>
+        
+    </section>
+    <section class="main3">
+        <div class="noteword">
+            <p>如需筆記本紀錄，可至自在行櫃檯旁領取。</p>
+        </div>
+        <div class="note">
+        <img src="assets/img/note.jpg">
+        </div>
+    </section>
+    <section class="main2">
+        <div class="slide">
+            <img class="mySlides" src="assets/img/t1.jpg">
+            <img class="mySlides" src="assets/img/t2.jpg">
+
+            <script>
+                var myIndex = 0;
+                carousel();2
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 1250);    
+                }
+                </script>
+        </div>
+        <div class="bdr"></div>
+        <div class="bdr1"></div>
+        <div class="bw1"><p>環</p></div>
+        <div class="bw2"><p>境</p></div>
+    </section>
+    
+</article>
+
+    <!--版權列-->
+    <footer>
+        <div class="footer">
+            <h1>Chung Yuan Christian University</h1>
+            <p>Copyright © 2021 CYIM <br>
+                32023 桃園市中壢區中北路200號<br>
+                Tel：+886-3-265-9999 , +886-3-456-3171 </p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky",window.scrollY > 0);
+        })
+    </script>
+
+</body>
+</html>
